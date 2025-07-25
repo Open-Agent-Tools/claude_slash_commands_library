@@ -15,7 +15,7 @@ Please perform a complete code cleanup by following these steps:
 
 1. **Run ruff linting and formatting (parallel)**: Execute `uv run ruff check . --fix` and `uv run ruff format .` in parallel to automatically fix linting issues and format code
 2. **Run mypy type checking**: Execute `uv run mypy .` and fix any errors found.
-3. **Run pytest via UV and summarize findings.
+3. **Run pytest via UV**: Execute `uv run pytest` with appropriate timeout handling. If tests timeout, run them in logical sections (e.g., by directory or test file groups) to ensure all tests are executed and results are captured. Always run the complete test suite, even if it requires multiple section runs.
 4. **Review and update**: Check TODO.md or *_TODO.md files for recent changes, update checkmarks, and compact older previously completed phases. Update all README.md, CLAUDE.md, and GEMINI.md with recent changes as appropriate.
 5. **Commit changes**: Create a detailed commit message summarizing all fixes
 6. **Push Commit**: Push to the current branch
