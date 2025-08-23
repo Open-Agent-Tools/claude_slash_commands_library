@@ -12,17 +12,11 @@ To set up this library in your Claude Code environment:
    cd ~/.claude/commands
    ```
 
-2. Initialize git and add this repository as the origin:
-   ```bash
-   git init
-   git remote add origin https://github.com/Open-Agent-Tools/claude_slash_commands_library.git
-   ```
-
-3. Fetch and checkout the main branch:
-   ```bash
-   git fetch origin
-   git checkout -b main origin/main
-   ```
+2. Download and extract the library:
+   - Visit https://github.com/Open-Agent-Tools/claude_slash_commands_library
+   - Click the green "Code" button
+   - Select "Download ZIP"
+   - Extract the ZIP file contents into the `~/.claude/commands` directory
 
 That's it! The slash commands are now available in your Claude Code sessions.
 
